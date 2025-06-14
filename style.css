@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url('world-images/bg1.jpg') no-repeat center center/cover;
+  background: url('img/صورة\ واتساب\ بتاريخ\ 2025-06-03\ في\ 23.11.20_0386ea16.jpg') no-repeat center center/cover;
   font-family: Arial, sans-serif;
   color: white;
   height: 100vh;
@@ -327,7 +327,6 @@ body {
   font-size: 18px;
   margin-bottom: 12px;
   color: #222;
-  border-bottom: 1px solid lightgrey;
   padding-bottom: 8px; 
   padding-left: 0%;
 }
@@ -534,7 +533,7 @@ body {
   font-size: 12px;
   color: #ccc;
 }
-/-------------------------------------/
+/*-------------------------------------*/
 .articles-videos {
   display: flex;
   gap: 0%;
@@ -699,7 +698,7 @@ body {
   background-color: #696969;
   color: white;
 }
-/---------------------------------------/
+/*---------------------------------------*/
 .site-footer {
   background: #161616;
   color: #aaa;

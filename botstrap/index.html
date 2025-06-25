@@ -3,218 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <title>World Template</title>
-  <!-- FontAwesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-  
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .services-wrapper {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .left-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      width: 70%;
+    }
+
+    .left-services .service-card {
+      flex: 1 1 calc(50% - 0.75rem);
+    }
+
+    .right-service {
+      width: 30%;
+    }
+
+    .right-service .service-card {
+      height: 100%;
+    }
+
+    .right-service img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
+
 <body>
-  <section class="container py-5">
-    <div class="row">
+  <!-- Navbar -->
+  <nav class="nav nav-tabs nav-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       
-      <div class="col-lg-8">
-        
-        <div class="mb-5">
-          <div class="row align-items-center mb-3 border-bottom">
-            <div class="col-md-4">
-              <h2 class="h4 m-0">Editor's Picks</h2>
-            </div>
-            <div class="col-md-8">
-              <nav>
-                <ul class="list-unstyled d-flex justify-content-end gap-3 mb-0">
-                  <li><a href="#" class="text-decoration-none text-primary fw-bold border-bottom border-primary pb-1">All</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Culture</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Design</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Lifestyle</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Inspiration</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Shop</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="border rounded overflow-hidden position-relative shadow-sm bg-light">
-                <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_0386ea16.jpg" class="img-fluid w-100" alt="">
-                <div class="p-3">
-                  <span class="badge bg-dark position-absolute top-0 start-0 m-2">EXPLORE</span>
-                  <h5>Inside the Artistic Mind: A Journey into Abstract Creativity</h5>
-                  <p class="small text-muted">By Lina Harper on May 5, 2025</p>
-                </div>
-              </div>
-              <div class="d-flex justify-content-start gap-3 mt-4">
-                <a href="#" class="btn btn-outline-dark rounded-circle"><i class="fas fa-arrow-left"></i></a>
-                <a href="#" class="btn btn-outline-dark rounded-circle"><i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="row g-3">
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_6f73c159.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Urban Escapes: Best Cities to Visit This Year</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_fcf301f3.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Minimalist Living: How Less Can Be More</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-16 في 20.28.14_ca90e453.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Exploring Creativity in Everyday Life</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.21_0e218b88.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">How Architecture Reflects Identity</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero-section py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold">Pawsitively Perfect:<br>Where Every Pet's Dream Comes True!</h1>
+          <p class="mt-3">Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services.</p>
         </div>
+        <div class="col-md-6 text-center mt-3">
+          <a href="#" class="btn btn-outline-dark rounded-pill">
+            Shop Now <sup><i class="fas fa-dog"></i></sup><sub><i class="fas fa-dog"></i></sub>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Hot Topics Section -->
-        <div class="mb-5">
-          <div class="row align-items-center mb-3 border-bottom">
-            <div class="col-md-4">
-              <h2 class="h4 m-0">Hot Topics</h2>
-            </div>
-            <div class="col-md-8">
-              <nav>
-                <ul class="list-unstyled d-flex justify-content-end gap-3 mb-0">
-                  <li><a href="#" class="text-decoration-none text-primary fw-bold border-bottom border-primary pb-1">All</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Innovation</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Fashion</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Health</a></li>
-                  <li><a href="#" class="text-decoration-none text-dark">Nature</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+  <!-- Shop Section -->
+   
+  <div class="container my-5">
+    <h4><sup></sup><i class="fa-solid fa-paw"></i> <sub><i class="fa-solid fa-paw"></i></sub> Shop</h4>
+    <hr>
 
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="border rounded overflow-hidden position-relative shadow-sm bg-light">
-                <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.22_a6063b63.jpg" class="img-fluid w-100" alt="">
-                <div class="p-3">
-                  <span class="badge bg-dark position-absolute top-0 start-0 m-2">IDEAS</span>
-                  <h5>The Rise of AI in Creative Fields</h5>
-                  <p class="small text-muted">By Sarah King on April 20, 2025</p>
-                </div>
-              </div>
-
-              <div class="row g-3 mt-2">
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Future Fashion: Tech-Driven Wearables</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-16 في 20.28.14_ca90e453.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Wellness Trends That Actually Work</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="border rounded overflow-hidden position-relative shadow-sm bg-light">
-                <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.21_0e218b88.jpg" class="img-fluid w-100" alt="">
-                <div class="p-3">
-                  <span class="badge bg-dark position-absolute top-0 start-0 m-2">TRENDING</span>
-                  <h5>Nature Photography in a Digital Age</h5>
-                  <p class="small text-muted">By Omar Saleh on March 30, 2025</p>
-                </div>
-              </div>
-
-              <div class="row g-3 mt-2">
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_0386ea16.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">Documenting Wildlife with Minimal Impact</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="border rounded d-flex shadow-sm">
-                    <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_fcf301f3.jpg" class="img-fluid" width="100" alt="">
-                    <div class="p-2">The Art of Digital Nomad Life</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-start gap-3 mt-4">
-            <a href="#" class="btn btn-outline-dark rounded-circle"><i class="fas fa-arrow-left"></i></a>
-            <a href="#" class="btn btn-outline-dark rounded-circle"><i class="fas fa-arrow-right"></i></a>
-          </div>
+    <div class="border p-4 rounded">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="fw-bold">Featured Products</h5>
+        <div class="position-relative">
+          <i class="fa fa-search position-absolute ms-2 mt-2 text-muted"></i>
+          <input type="text" class="form-control ps-4" placeholder="Search">
         </div>
       </div>
 
-      <!-- Sidebar -->
-      <div class="col-lg-4 border-start border-2 ps-3">
-        <div class="mb-4">
-          <div class="border-bottom pt-2 pb-2">
-            <h3 class="h5">About This Site</h3>
+      <div class="tabs mb-4">
+        <button class="btn active me-2">Random</button>
+        <button class="btn me-2">Cat</button>
+        <button class="btn me-2">Dogs</button>
+        <button class="btn me-2">Fish</button>
+        <button class="btn">Birds</button>
+      </div>
+
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" class="product-img" alt="Product">
+        </div>
+        <div class="col-md-4">
+          <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_6f73c159.jpg" class="product-img" alt="Product">
+        </div>
+        <div class="col-md-4">
+          <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.21_0e218b88.jpg" class="product-img" alt="Product">
+        </div>
+      </div>
+      <div class="text-end mt-3">
+        <a href="#" class="text-decoration-none fw-bold">View More &gt;&gt;&gt;</a>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container py-5">
+    <h4><sup></sup><i class="fa-solid fa-paw"></i> <sub><i class="fa-solid fa-paw"></i></sub> services</h4>
+    <hr>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row g-4">
+        <!-- الصورة الأولى -->
+        <div class="col-md-6">
+          <div class="service-card position-relative overflow-hidden">
+            <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_fcf301f3.jpg" alt="Grooming" class="img-fluid h-100 w-100" style="object-fit: cover;">
+            <div class="service-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+              <h5 class="fw-bold">Grooming</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
-          <p>Welcome to your daily source of inspiration and insight. Dive into stories that matter and trends that shape the world around you.</p>
         </div>
 
-        <div class="mb-4">
-          <div class="border-top border-bottom pt-2 pb-2">
-            <h3 class="h5">Featured Reads</h3>
-          </div>
-          <div class="row g-2">
-            <!-- Cards -->
-            <div class="col-12 d-flex border rounded shadow-sm">
-              <img src="img/صورة واتساب بتاريخ 2025-06-16 في 20.28.14_ca90e453.jpg" class="img-fluid" width="100" alt="">
-              <div class="p-2">The Minimalist’s Guide to Clarity</div>
-            </div>
-            <div class="col-12 d-flex border rounded shadow-sm">
-              <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.22_a6063b63.jpg" class="img-fluid" width="100" alt="">
-              <div class="p-2">Rediscovering Art in the Digital World</div>
-            </div>
-            <div class="col-12 d-flex border rounded shadow-sm">
-              <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_6f73c159.jpg" class="img-fluid" width="100" alt="">
-              <div class="p-2">A Closer Look at Hidden Destinations</div>
+        <!-- الصورة الثانية -->
+        <div class="col-md-6">
+          <div class="service-card position-relative overflow-hidden">
+            <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_0386ea16.jpg" alt="Boarding" class="img-fluid h-100 w-100" style="object-fit: cover;">
+            <div class="service-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+              <h5 class="fw-bold">Boarding</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
-          <div class="border-top border-bottom pt-2 pb-2">
-            <h3 class="h5">Stay Connected</h3>
-          </div>
-          <div class="d-flex gap-3 m-3">
-            <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle border text-dark fw-bold text-decoration-none" style="width: 40px; height: 40px;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle border text-dark fw-bold text-decoration-none" style="width: 40px; height: 40px;"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle border text-dark fw-bold text-decoration-none" style="width: 40px; height: 40px;"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle border text-dark fw-bold text-decoration-none" style="width: 40px; height: 40px;"><i class="fab fa-pinterest-p"></i></a>
+        <!-- الصورة الثالثة -->
+        <div class="col-md-6">
+          <div class="service-card position-relative overflow-hidden">
+            <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_6f73c159.jpg" alt="Adoption" class="img-fluid h-100 w-100" style="object-fit: cover;">
+            <div class="service-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+              <h5 class="fw-bold">Adoption</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </div>
 
-        <div>
-          <div class="border-top border-bottom pt-2 pb-2">
-            <h3 class="h5">Editor's Daily Pick</h3>
-          </div>
-          <div class="border rounded overflow-hidden shadow-sm">
-            <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.21_0e218b88.jpg" class="img-fluid w-100" alt="">
-            <div class="p-2">
-              Journey Through the Most Unexpected Inspirations in Art
+        <!-- الصورة الرابعة -->
+        <div class="col-md-6">
+          <div class="service-card position-relative overflow-hidden">
+            <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" alt="Other" class="img-fluid h-100 w-100" style="object-fit: cover;">
+            <div class="service-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+              <h5 class="fw-bold">Other</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- الصورة الخامسة - على اليمين -->
+<div class="col-md-4 d-flex">
+  <div class="service-card position-relative overflow-hidden w-100 tall-card">
+    <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" alt="Veterinary" class="img-fluid h-100 w-100" style="object-fit: cover;">
+    <div class="service-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+      <h5 class="fw-bold">Veterinary</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+</div>
+  
+  <section class="container my-5">
+    <div class="d-flex align-items-center mb-4">
+      <sub><i class="fa-solid fa-paw text-dark me-2"></i></sub> <sup><i class="fa-solid fa-paw text-dark me-2"></i></sup>
+      <h3 class="fw-bold text-dark m-0">About Us</h3>
+    </div>
+    <hr>
+
+    <div class="p-4 border rounded bg-white">
+      <div class="row">
+        <div class="col-md-7">
+          <p>At Paws n’ Play, our journey began with a simple yet profound love for animals...</p>
+          <p>Driven by our passion for animal welfare, we hand-select each product and service...</p>
+          <p>We’re dedicated to fostering a community...</p>
+          <p>Customer satisfaction is our guiding principle...</p>
+          <p>Join us in our mission to create a world where every pet is cherished...</p>
+        </div>
+
+        <div class="col-md-5 position-relative">
+          <div class="rounded overflow-hidden mb-3" style="height: 260px;">
+            <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_0386ea16.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded" alt="Big Cat">
+          </div>
+          <div class="position-absolute" style="bottom: 0; left: 0; width: 160px; height: 130px; border: 4px solid #fff; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            <img src="img/صورة واتساب بتاريخ 2025-06-03 في 23.11.20_0386ea16.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Small Cat">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- team-->
+  <div class="row text-center g-4">
+    <!-- member 1 -->
+    <div class="col-6 col-md-3">
+      <img src="img/unsplash_DEQAyBEDRQE.png" alt="Dr. Olivia Rhye" class="img-fluid mb-3" style="height: 280px; object-fit: cover; width: 100%;">
+      <h5 class="fw-bold text-dark mb-1">Dr. Olivia Rhye</h5>
+      <p class="text-muted mb-2">Senior Veterinarian</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><i class="fab fa-linkedin fa-lg text-muted"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg text-muted"></i></a>
+        <a href="#"><i class="fas fa-globe fa-lg text-muted"></i></a>
+      </div>
+    </div>
+
+    <!-- member 2 -->
+    <div class="col-6 col-md-3">
+      <img src="img/unsplash_O13B7suRG4A.png" alt="Phoenix Baker" class="img-fluid mb-3" style="height: 280px; object-fit: cover; width: 100%;">
+      <h5 class="fw-bold text-dark mb-1">Phoenix Baker</h5>
+      <p class="text-muted mb-2">Asst. Veterinarian</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><i class="fab fa-linkedin fa-lg text-muted"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg text-muted"></i></a>
+        <a href="#"><i class="fas fa-globe fa-lg text-muted"></i></a>
+      </div>
+    </div>
+
+    <!-- member 3 -->
+    <div class="col-6 col-md-3">
+      <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" alt="Lana Steiner" class="img-fluid mb-3" style="height: 280px; object-fit: cover; width: 100%;">
+      <h5 class="fw-bold text-dark mb-1">Lana Steiner</h5>
+      <p class="text-muted mb-2">Resident Veterinarian</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><i class="fab fa-linkedin fa-lg text-muted"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg text-muted"></i></a>
+        <a href="#"><i class="fas fa-globe fa-lg text-muted"></i></a>
+      </div>
+    </div>
+
+    <!-- member 4 -->
+    <div class="col-6 col-md-3">
+      <img src="img/صورة واتساب بتاريخ 2025-06-02 في 11.57.33_26bb3d5a.jpg" alt="Demi Wilkinson" class="img-fluid mb-3" style="height: 280px; object-fit: cover; width: 100%;">
+      <h5 class="fw-bold text-dark mb-1">Demi Wilkinson</h5>
+      <p class="text-muted mb-2">Intern Veterinarian</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><i class="fab fa-linkedin fa-lg text-muted"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg text-muted"></i></a>
+        <a href="#"><i class="fas fa-globe fa-lg text-muted"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> -->
+</html>

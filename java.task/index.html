@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Navigation Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      font-weight: bold;
+    }
+
+    li a.active {
+      background-color: #0d6efd;
+      color: white;
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 18px;
+      color: #333;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+
+    p.active {
+      color: #0d6efd;
+    }
+  </style>
 </head>
 <body>
-    
 
+  <ul id="navList">
+    <li><a href="#" class="nav-link">Home</a></li>
+    <li><a href="#" class="nav-link">About</a></li>
+    <li><a href="#" class="nav-link">Services</a></li>
+    <li><a href="#" class="nav-link">Contact</a></li>
+  </ul>
 
-    <script src="script.js">
+  <p id="myParagraph">This is a paragraph under the navigation list.</p>
 
-    </script>
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const paragraph = document.getElementById('myParagraph');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    paragraph.addEventListener('click', function () {
+      paragraph.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>

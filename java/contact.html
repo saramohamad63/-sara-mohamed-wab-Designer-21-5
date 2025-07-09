@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Tradex</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--animation-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Shortcut icon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="http://dazzlersoftware.com/testwp/munix-pro/wp-content/themes/munix-pro/img/favicon.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --theme-color: #0d6efd;
+      }
+
+      .form-control {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        border-color: var(--theme-color);
+      }
+
+      .banner-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("http://dazzlersoftware.com/testwp/munix-pro/wp-content/themes/munix-pro/img/abt-ban.jpg")
+            center/cover no-repeat;
+      }
+
+      .btn-send:hover {
+        background-color: black !important;
+        border-color: black !important;
+      }
+
+      .btn-purchase:hover {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+
+      .breadcrumb-arrow .breadcrumb-item + .breadcrumb-item::before {
+        content: "→";
+        color: white;
+      }
+
+      /* Navbar Styles */
+      .navbar.sticky-top {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+      }
+
+      body {
+        padding-top: 0;
+      }
+
+      /* Dropdown Menu */
+      .dropdown-menu {
+        transition: all 0.5s ease;
+        display: none;
+        border-top: 3px solid var(--theme-color);
+      }
+
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+        animation: slideInLeft 0.3s ease;
+      }
+
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      /* Phone Icon in CTA Section */
+      .cta-section .fa-phone-volume {
+        margin-right: 10px;
+      }
+
+      /* Mobile Menu Styles */
+      @media (max-width: 991.98px) {
+        .top-header {
+          display: none !important;
+        }
+
+        .navbar-toggler {
+          color: black !important;
+          border-color: black !important;
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-collapse {
+          background-color: black;
+          padding: 20px;
+          margin-top: 10px;
+          border-radius: 5px;
+        }
+
+        .navbar-nav .nav-link {
+          color: white !important;
+          padding: 10px 0;
+        }
+
+        .dropdown-menu {
+          background-color: #333;
+        }
+
+        .dropdown-item {
+          color: white !important;
+        }
+
+        .dropdown-item:hover {
+          background-color: #444;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Header - Hidden on Mobile -->
+    <div
+      class="top-header text-white py-2 d-none d-lg-block"
+      style="background-color: var(--theme-color)"
+    >
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="d-flex align-items-center gap-3 mb-2 mb-md-0">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"
+            ><i class="fab fa-google-plus-g"></i
+          ></a>
+          <span class="vr mx-2"></span>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>267 Park Avenue New York, NY 90210</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fas fa-envelope"></i> <span>Quick Email</span>
+          <span class="vr mx-2"></span>
+          <i class="fas fa-phone-alt"></i> <span>+1 (409) 987–5874</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top"
+    >
+      <div class="container">
+        <div class="logo">
+          <a href="https://digitaltemplatemarket.com/wp/tradex-premium/">
+            <img
+              src="http://digitaltemplatemarket.com/wp/tradex-premium/wp-content/uploads/sites/6/2019/05/Trade-X-Logo.png"
+            />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Home</a
+              >
+              <ul
+                class="dropdown-menu shadow-0 border-0 rounded-0 py-0 border-top border-3 border-primary"
+              >
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Home01</a
+                  >
+                </li>
+                <li><a class="dropdown-item py-2 px-4" href="#">Home02</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Headers</a
+              >
+              <ul
+                class="dropdown-menu shadow-0 border-0 rounded-0 py-0 border-top border-3 border-primary"
+              >
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Header Style 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4" href="#">Header Style 2</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Blog Post</a
+              >
+              <ul
+                class="dropdown-menu shadow-0 border-0 rounded-0 py-0 border-top border-3 border-primary"
+              >
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Blog Grid</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Blog masonary</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >clasic</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4" href="#">Blog Detail</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul
+                class="dropdown-menu shadow-0 border-0 rounded-0 py-0 border-top border-3 border-primary"
+              >
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Service 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4" href="#">Service 2</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Features</a
+              >
+              <ul
+                class="dropdown-menu shadow-0 border-0 rounded-0 py-0 border-top border-3 border-primary"
+              >
+                <li>
+                  <a class="dropdown-item py-2 px-4 border-bottom" href="#"
+                    >Feature 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 px-4" href="#">Feature 2</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div
+                class="dropdown-menu shadow-0 border-0 border-top border-3 border-primary rounded-0 p-4 mx-auto"
+                style="width: 700px; right: 0%"
+              >
+                <div class="row gx-4">
+                  <div class="col-6 col-md-3 border-end mb-3 mb-md-0">
+                    <h6 class="fw-bold text-uppercase mb-3">Project Style 1</h6>
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >2 Column Grid</a
+                    >
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >3 Column Grid</a
+                    >
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >2 Column Masonary</a
+                    >
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >3 Column Masonary</a
+                    >
+                  </div>
+                  <div class="col-6 col-md-3 border-end mb-3 mb-md-0">
+                    <h6 class="fw-bold text-uppercase mb-3">Project Style 2</h6>
+                    <a class="dropdown-item py-2 px-0" href="#">2 Col Grid</a>
+                    <a class="dropdown-item py-2 px-0" href="#">3 Col Grid</a>
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >2 Col Masonary</a
+                    >
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >3 Col Masonary</a
+                    >
+                  </div>
+                  <div class="col-6 col-md-3 border-end mb-3 mb-md-0">
+                    <h6 class="fw-bold text-uppercase mb-3">Other Page</h6>
+                    <a class="dropdown-item py-2 px-0" href="#"
+                      >Project Detail</a
+                    >
+                    <a class="dropdown-item py-2 px-0" href="#">Team Style 1</a>
+                    <a class="dropdown-item py-2 px-0" href="#">Team Style 2</a>
+                    <a class="dropdown-item py-2 px-0" href="#">Team Detail</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3">Other Page</h6>
+                    <a class="dropdown-item py-2 px-0" href="#">Pricing</a>
+                    <a class="dropdown-item py-2 px-0" href="#">FAQ</a>
+                    <a class="dropdown-item py-2 px-0" href="#">404</a>
+                    <a class="dropdown-item py-2 px-0" href="#">Typography</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section
+      class="banner-section d-flex align-items-center justify-content-center text-white"
+      style="height: 300px"
+    >
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Contact</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb with Arrow -->
+    <nav class="bg-dark py-2">
+      <div class="container">
+        <ol class="breadcrumb breadcrumb-arrow justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white text-decoration-none"
+              >Home</a
+            >
+          </li>
+          <li class="breadcrumb-item active text-white" aria-current="page">
+            Contact
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Contact Info Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <span
+            style="
+              width: 40px;
+              height: 2px;
+              background-color: var(--theme-color);
+              display: inline-block;
+            "
+          ></span>
+          <span class="mx-3">Contact Info</span>
+          <span
+            style="
+              width: 40px;
+              height: 2px;
+              background-color: var(--theme-color);
+              display: inline-block;
+            "
+          ></span>
+        </h2>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="fs-1 mb-3" style="color: var(--theme-color)">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h5 class="fw-bold">Address</h5>
+            <p class="text-muted">
+              267-A, Street Name Park Sera Avenue, New York, NY 90210
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="fs-1 mb-3" style="color: var(--theme-color)">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h5 class="fw-bold">Call Us</h5>
+            <p class="text-muted">Phone 1: (+098) 7654 3210</p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="fs-1 mb-3" style="color: var(--theme-color)">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h5 class="fw-bold">Email</h5>
+            <p class="text-muted">support@company.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <span
+            style="
+              width: 40px;
+              height: 2px;
+              background-color: var(--theme-color);
+              display: inline-block;
+            "
+          ></span>
+          <span class="mx-3">Get In Touch</span>
+          <span
+            style="
+              width: 40px;
+              height: 2px;
+              background-color: var(--theme-color);
+              display: inline-block;
+            "
+          ></span>
+        </h2>
+
+        <form class="mx-auto" style="max-width: 800px">
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-tag"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fas fa-comment-dots"></i>
+              </span>
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="text-start">
+            <button
+              type="submit"
+              class="btn btn-primary rounded-pill px-4 py-2 fw-bold btn-send"
+              style="
+                background-color: var(--theme-color);
+                border-color: var(--theme-color);
+              "
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA Section with Phone Icon -->
+    <!-- CTA Section -->
+    <section
+      class="py-5 text-white cta-section"
+      style="background-color: var(--theme-color)"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 d-flex align-items-center gap-3">
+            <i class="fas fa-phone-volume fa-2x"></i>
+            <h4 class="fw-bold mb-3 mb-md-0">
+              If You Like This Great Work For Your Site...
+            </h4>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <button
+              class="btn btn-light rounded-pill px-4 fw-bold btn-purchase"
+              style="color: var(--theme-color)"
+            >
+              Purchase Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Contact Info</h5>
+            <div
+              class="mb-3"
+              style="
+                width: 40px;
+                height: 2px;
+                background-color: var(--theme-color);
+              "
+            ></div>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i>123 Street Market, Life
+              Plaza, New York
+            </p>
+            <p><i class="fas fa-phone me-2"></i>987654321</p>
+            <p><i class="fas fa-envelope me-2"></i>team@gmail.com</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Posts</h5>
+            <div
+              class="mb-3"
+              style="
+                width: 40px;
+                height: 2px;
+                background-color: var(--theme-color);
+              "
+            ></div>
+            <div class="d-flex mb-3">
+              <img
+                src="https://digitaltemplatemarket.com/wp/tradex-premium/wp-content/uploads/sites/6/2018/11/gallery2-1.png"
+                class="rounded me-3"
+                style="width: 80px; height: 60px; object-fit: cover"
+              />
+              <div>
+                <a href="#" class="text-white text-decoration-none"
+                  >Four ways to cheer and plan your self up on Blue</a
+                >
+                <p class="text-white small mb-0">
+                  <i class="far fa-calendar-alt me-1"></i>December 19, 2018
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img
+                src="https://digitaltemplatemarket.com/wp/tradex-premium/wp-content/uploads/sites/6/2018/11/bg3.jpg"
+                class="rounded me-3"
+                style="width: 80px; height: 60px; object-fit: cover"
+              />
+              <div>
+                <a href="#" class="text-white text-decoration-none"
+                  >Four ways to cheer and plan your self up on Blue</a
+                >
+                <p class="text-white small mb-0">
+                  <i class="far fa-calendar-alt me-1"></i>December 19, 2018
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Popular</h5>
+            <div
+              class="mb-3"
+              style="
+                width: 40px;
+                height: 2px;
+                background-color: var(--theme-color);
+              "
+            ></div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark">Accountancy</span>
+              <span class="badge bg-light text-dark">Affiliate</span>
+              <span class="badge bg-light text-dark">Branding</span>
+              <span class="badge bg-light text-dark">Construction</span>
+              <span class="badge bg-light text-dark">Design</span>
+              <span class="badge bg-light text-dark">Drupal</span>
+              <span class="badge bg-light text-dark">Education</span>
+              <span class="badge bg-light text-dark">Graphics</span>
+              <span class="badge bg-light text-dark">Joomla</span>
+              <span class="badge bg-light text-dark">Marketing</span>
+              <span class="badge bg-light text-dark">Money</span>
+              <span class="badge bg-light text-dark">Tally</span>
+              <span class="badge bg-light text-dark">Transform</span>
+              <span class="badge bg-light text-dark">Website</span>
+              <span class="badge bg-light text-dark">WordPress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="bg-black text-center py-3">
+      <div class="container">
+        <small style="color: var(--theme-color)"
+          >© 2019 Developed By DTM Theme</small
+        >
+      </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button
+      id="scrollTopBtn"
+      class="btn rounded-circle position-fixed d-none"
+      style="
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        background-color: var(--theme-color);
+      "
+    >
+      <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+    <!-- Color Palette (Gear Button) -->
+    <div
+      class="position-fixed top-50 start-0 translate-middle-y ms-2"
+      style="z-index: 999"
+    >
+      <button id="gearBtn" class="btn btn-dark rounded-circle mb-2">
+        <i class="fas fa-cog"></i>
+      </button>
+      <div id="colorPalette" class="bg-white p-3 rounded shadow d-none">
+        <p class="fw-bold text-secondary small mb-2">COLOR SKIN</p>
+        <div class="d-flex flex-wrap gap-2">
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #007bff"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #17a2b8"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #536dfe"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #20c997"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #fd7e14"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #28a745"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #6f42c1"
+          ></button>
+          <button
+            class="btn p-0 m-0 color-option"
+            style="width: 30px; height: 30px; background-color: #e83e8c"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Scroll to top button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $("#scrollTopBtn").removeClass("d-none");
+          } else {
+            $("#scrollTopBtn").addClass("d-none");
+          }
+        });
+
+        $("#scrollTopBtn").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+
+        // Color palette toggle
+        $("#gearBtn").click(function () {
+          $("#colorPalette").toggleClass("d-none");
+        });
+
+        // Color change functionality
+        $(".color-option").click(function () {
+          const newColor = $(this).css("background-color");
+          document.documentElement.style.setProperty("--theme-color", newColor);
+        });
+      });
+
+      //form validation
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
+        const inputs = form.querySelectorAll("input, textarea");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        function validateField(field) {
+          const value = field.value.trim();
+          let valid = true;
+          let message = "";
+
+          if (value === "") {
+            valid = false;
+            message = "This field is required";
+          } else if (field.type === "email" && !emailRegex.test(value)) {
+            valid = false;
+            message = "Enter a valid email";
+          }
+
+          if (!valid) {
+            field.classList.add("is-invalid");
+            field.classList.remove("is-valid");
+            if (
+              !field.nextElementSibling ||
+              !field.nextElementSibling.classList.contains("invalid-feedback")
+            ) {
+              const error = document.createElement("div");
+              error.className = "invalid-feedback";
+              error.textContent = message;
+              field.parentNode.appendChild(error);
+            } else {
+              field.nextElementSibling.textContent = message;
+            }
+          } else {
+            field.classList.remove("is-invalid");
+            field.classList.add("is-valid");
+            if (
+              field.nextElementSibling &&
+              field.nextElementSibling.classList.contains("invalid-feedback")
+            ) {
+              field.nextElementSibling.remove();
+            }
+          }
+
+          return valid;
+        }
+
+        inputs.forEach((input) => {
+          input.addEventListener("blur", () => validateField(input));
+          input.addEventListener("input", () => validateField(input));
+        });
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let allValid = true;
+
+          inputs.forEach((input) => {
+            if (!validateField(input)) {
+              allValid = false;
+            }
+          });
+
+          if (allValid) {
+            alert(" Form submitted successfully!");
+            form.reset();
+            inputs.forEach((input) => input.classList.remove("is-valid"));
+          } else {
+            alert(" Please fill all fields correctly.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
